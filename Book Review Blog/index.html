@@ -4,24 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Review Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
+            background-color: #FBF5ED;
         }
         .main{
-            width: 94%;
+            width: 92%;
             height: 200vh;
-            margin-left: 3%;
+            margin-left: 4%;
             margin-top: 2%;
-            background-color: pink;
+            background-color: #FBF5ED;
+        }
+        .logo{
+            color: black;
+            text-decoration: none;
+        }
+        .head{
+            display: flex;
+            margin-bottom: 0.5%;
+        }
+        .second{
+            /* background-color: pink; */
+            width: 20%;
+            margin-left:74%
+        }
+        .anchor{
+            text-decoration: none;
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }   
+        .search{
+            width: 35%;
+            height: 100%;
+            font-size: ;
         }
     </style>
 </head>
 <body>
     <div class="main">
         <div class="head">
-            <p>Books Nation</p>
+            <a href="#" class="logo"  ><p style="font-family:Anton SC; font-size: 120%;" >Books Nation</p></a>
+            <div class="second" >
+                <a href="#" class="anchor" style="margin-left: 10%;" >Home</a>
+                <a href="#" class="anchor" style="margin-left: 10%;" >Blog</a>
+                <img src="https://www.svgrepo.com/show/7109/search.svg" style="width: 5%;margin-left: 10%;" >
+                <input type="search" class="search" placeholder="Search..." >
+            </div>
         </div>
+        <hr>
     </div>
 </body>
 </html>
