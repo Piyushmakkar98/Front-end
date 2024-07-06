@@ -6,23 +6,27 @@
     <title>Book Review Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Questrial&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
+            box-sizing: border-box;
             background-color: #FBF5ED;
         }
         .main{
             width: 92%;
-            height: 200vh;
+            height: 170vh;
             margin-left: 4%;
             margin-top: 2%;
+            /* margin-bottom: 10vh; */
             background-color: #FBF5ED;
+            /* background-color: black; */
         }
         .logo{
             color: black;
             text-decoration: none;
-            width: 80%;
+            width: 70%;
         }
         .head{
             display: flex;
@@ -30,7 +34,7 @@
         }
         .second{
             /* background-color: pink; */
-            width: 20%;
+            width: 30%;
             /* margin-left:74% */
             float: right;
         }
@@ -44,6 +48,149 @@
             width: 35%;
             height: 100%;
             /* font-size: ; */
+            outline: none;
+            border: 0;
+            font-size: medium;
+        }
+        .headerr{
+            margin-top: 8%;
+            text-align: center;
+            font-family:questrial,sans-serif;
+            font-size: 6vw;
+        }
+        .subhead{
+            text-align: center;
+            font-family:questrial,sans-serif;
+            font-size: 1.5vw;  
+            font-weight: 500;          
+        }
+        .image{
+            width: 100%;
+            height: 110vh;
+            overflow: hidden;
+        }
+        .img1{
+            position: absolute;
+            margin-top: 10vh;
+            height: 70%;
+            z-index: 2;
+        }
+        .img2{
+            margin-left: 30%;
+        }
+        .what{
+            margin: 0;
+            height: 150vh;
+            width: 100%;
+            background-color: #9A5233;
+        }
+        .some{
+            width: 92%;
+            height: 140vh;
+            margin-left: 4%;
+            margin-top: 2%; 
+            background-color: #9A5233;
+            padding-top: 13vh;
+        }
+        .para{
+            background-color: #9A5233;
+            color: white;
+            font-size: 3.5vw;
+            font-family: Baskervville SC, serif;
+        }
+        .box{
+            margin-top: 4vh;
+            display: flex;
+            width: 100%;
+            background-color: #9A5233;
+            height: 100vh;
+        }
+        .four{
+            height: 100vh;
+            width: 30vw;
+            background-color: white;
+            border: 1px solid black;
+            padding: 3% 0 0 0 ;
+        }
+        .five{
+            height: 100vh;
+            width: 30vw;
+            background-color: white;
+            margin-left: 2vw;
+            border: 1px solid black;
+            padding: 3% 0 0 0 ;
+        }
+        .six{
+            height: 100vh;
+            width: 30vw;
+            margin-left: 2vw;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .ok{
+            height: 62vh;
+            margin-top: 1.2vh; 
+            margin-left: 5vw;  
+        }
+        .yes{
+            object-fit: contain;
+            height: 60vh;
+            margin-left: 5vw;
+            margin-top: 2vh;
+        }
+        .yess{
+            object-fit: contain ;
+            height: 75vh;
+            width: 100%;  
+            background-color: white;
+        }
+        #he{
+            font-family: Anton SC, serif;font-size: medium;
+            background-color: white;
+            margin-left: 8%;
+        }
+        #she{
+            font-family: Anton SC, serif;font-size: medium;
+            background-color: white;
+            margin-top: 8vh;
+            margin-left: 8%;
+        }
+        #his{
+            background-color: white;
+            margin-left: 8%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #her{
+            background-color: white;
+            margin-left: 8%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+        }
+        footer{
+            height: 50vh;
+            width: 100%;
+            background-color: F8F4F1;
+            display: flex;
+        }
+        .tired{
+            height: 10vh;
+            width: 55vw;
+            margin-left: 10vw;
+            background-color: F8F4F1;
+            margin-top: 15vh;
+        }
+        .ops{
+            font-family:Anton SC; font-size: 120%;width: 50%;
+            text-decoration: underline;
+        }
+        .done{
+            margin-top:17vh;
+            /* background-color: black; */
+            height: 30vh;
+            width: 20%;
+        }
+        .pp{
+            font-family:questrial,sans-serif;
+            margin-top: 1vh;
         }
     </style>
 </head>
@@ -59,6 +206,51 @@
             </div>
         </div>
         <hr>
+        <p class="headerr" >Discover Books</p><br>
+        <p class="subhead" >Unleash Your Love for Reading</p>
+        <br><br><br>
+        <div class="image" >
+                <img src="https://static.wixstatic.com/media/11062b_8233ded4a4dd47bbb3042b7396b2eef4~mv2.jpg/v1/fill/w_1018,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_8233ded4a4dd47bbb3042b7396b2eef4~mv2.jpg" alt="" class="img1" width="45%" >
+                <img src="https://static.wixstatic.com/media/11062b_00067cf291384ba5a55c57dad411ba78~mv2.jpg/v1/fill/w_1344,h_808,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_00067cf291384ba5a55c57dad411ba78~mv2.jpg" alt="" class="img2" width="80%" >
+        </div>
     </div>
+    <div class="what" >
+        <div class="some" >
+            <p class="para">Book Reviews</p>
+            <div class="box">
+                <div class="four">
+                    <a style="background-color: white;" href="#"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1581527774i/41881472.jpg" alt="" class="ok"  ></a>
+                    <a href="" style="color: black;text-decoration: none;" >
+                        <p id="she">Morgan Housel</p>
+                        <p id="her" >The Psychology of Money</p> 
+                    </a>                   
+                </div>    
+                <div class="five">
+                    <a style="background-color: white;" href="#"><img src="https://m.media-amazon.com/images/I/81uMF1t16LL._SL1500_.jpg" alt="" class="yes"></a>
+                    <a href="" style="color: black;text-decoration: none;" >
+                        <p id="she">Laura Nowlin</p>
+                        <p id="her" >If Only I Had Told Her</p>
+                    </a>
+                </div>
+                <div class="six">
+                    <a style="background-color: white;"  href="#"><img src="https://m.media-amazon.com/images/I/41IJZc1PYYL._SL500_.jpg" alt="" class="yess"></a>
+                    <a href="#" style="color: black;text-decoration: none;" >
+                        <p id="he" >Martin McGreggor</p>
+                        <p id="his" >Paths to Satan: A Guide to Contemporary Satanism</p>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="tired" >
+            <p class="ops" >Book Nation</p>
+        </div>
+        <div class="done" >
+            <p class="pp" >2310992176</p>
+            <p class="pp" >piyush2176.be23@chitkara.edu.in</p>
+            <p class="pp" >Chitkara University, Punjab</p>
+        </div>
+    </footer>
 </body>
 </html>
