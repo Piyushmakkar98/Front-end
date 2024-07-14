@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+
+         /* descendent combinators selector*/
+        ul li a {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* child combinator selector */
+            /* selects immediate next tags */
+
+        ol > li {
+            color: pink;
+            background-color: black;
+        }
+
+        /* Adjacent combinator selector */
+            /* agl bagal */ 
+            /* downward flow upr wala wont be selected */
+        h3+p{
+            font-size: 30px;
+            border: 1px solid red;
+        }
+
+        /* general sibling */
+        section~p{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Learning about combinator selectors:</h1>
+    <ul>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Wikipedia</a></li>
+    </ul>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam labore reprehenderit veritatis corporis vero et assumenda dolor tempore odio debitis!</p>
+        <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <ul>
+                <li>My Banana</li>
+                <li>Your Banana</li>
+            </ul>
+            <li>Grapes</li>
+        </ol>
+    </section>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim aliquid minus ab, iure voluptatibus, voluptas architecto impedit itaque eum dolorum deserunt tempore eaque quibusdam consequuntur eius consequatur, repudiandae suscipit.</p>
+    <h3>This is heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem labore ipsam illum amet. Tempore pariatur nesciunt nihil itaque esse voluptatum voluptatibus nulla expedita, deserunt ex numquam fugiat, magni rerum ipsa!</p>
+</body>
+</html>
