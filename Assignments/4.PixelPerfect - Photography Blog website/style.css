@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    height: 25vh;
+    width: 100%;
+    background-color: white ;
+    display: flex;
+    align-items: center;
+    /* cursor: url(camera.png), help ; */
+    border-bottom: 2px solid black;
+}
+.title{
+    /* margin-left: 1vw; */
+    font-family: "Kalnia Glaze", serif;
+    font-size: 13vw;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.anchor{
+    display: none;
+}
+.main{
+    width: 100%;
+    height: 190vh;
+    /* background-color: gray; */
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.one{
+    display: none;
+}
+.two{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    height: 38vh;
+    width: 45vw;
+    /* background-color: pink; */
+}
+.imagebox{
+    /* background-color: red; */
+    height: 28vh;
+    width: 100%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgtext{
+    margin-top: 1vh;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-family: sans-serif;
+    /* font-weight: 550; */
+}
+.atag:hover{
+    color: red;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .title{
+        font-size: 11vw;
+    }
+    .one{
+        display: block;
+        width: 25%;
+        height: 100%;
+        /* background-color: red; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        font-family: sans-serif;
+        /* margin-top: 22vh; */
+        /* padding-top: 10%; */
+        /* text-align: center; */
+        /* padding-left: 10vw; */
+        
+        border-right: 2px solid black;
+    }
+    #start{
+        margin-top: 7vh;
+    }
+    .one p {
+        margin-left: 2vw;
+    }
+    p:hover{
+        color: red;
+    }
+    .two{
+        width: 75%;
+    }
+    .box{
+        height: 40vh;
+        width: 30vw;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main{
+        height: 200vh;
+    }
+    .box{
+        height: 40vh;
+        width: 34vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    header{
+        height: 20vh;
+        /* background-color: black; */
+    }
+    .title{
+        margin-left: 3vw;
+        font-size: 4vw;
+        justify-content: start;
+        width: 70%;
+        /* backgro
+        grund-color: black; */
+    }
+    .anchor{
+        display: flex;
+        height: 20vh;
+        width: 30%;
+        /* background-color: gray; */
+        align-items: center;
+        justify-content: end;
+        margin-right: 3vw;
+    }
+    .atag{
+        color: black;
+        text-decoration: none;
+        margin-left: 2.5vw;
+        font-family: "Oswald", sans-serif;
+        font-size: larger;
+        /* font-optical-sizing: auto; */
+    }
+    .main{
+     height: 230vh;   
+    }
+    .one{
+        width: 25%;
+    }
+
+    .two{
+        width: 75%;
+        grid-template-columns: auto auto auto;
+    }
+    .box{
+        height: 66vh;
+        width: 18vw;
+        display: grid;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .imagebox{
+        height: 54vh;
+    }
+    .one p {
+        margin-left: 7vw;
+    }
+}
