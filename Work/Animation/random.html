@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100vh;
+            width: 100%;
+        }
+      /* Initial state of the div */
+      .animate-from-right {
+        opacity: 0;
+        transform: translateX(100%); /* Start off-screen to the right */
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        background-color: red;
+        height: 10vh;
+        width: 10vw;
+      }
+
+      /* State when the animation is triggered */
+      .animate-from-right.active {
+        opacity: 1;
+        transform: translateX(0); /* Move to its original position */
+        background-color: red;
+        height: 10vh;
+        width: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="animate-from-right">
+      <!-- Your content here -->
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedElement = document.querySelector(".animate-from-right");
+
+        function onScroll() {
+          const elementPosition = animatedElement.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight;
+
+          // Check if the element is within the viewport
+          if (elementPosition < screenPosition) {
+            animatedElement.classList.add("active");
+            // Optionally, remove the event listener after the animation has triggered
+            window.removeEventListener("scroll", onScroll);
+          }
+        }
+
+        window.addEventListener("scroll", onScroll);
+      });
+    </script>
+  </body>
+</html>
