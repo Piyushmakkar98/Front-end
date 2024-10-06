@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            height: 90vh;
+            width: 350px;
+            /* padding: 10px; */
+            background-color: skyblue;
+            margin-top: 5vh;
+            display: grid;
+            justify-content: center;
+            align-items:center;
+        }
+        .box1{
+
+            height: 33vh;
+            width: 250px;
+            background-color: white;
+        
+        }
+        .box2{
+            height: 50vh;
+            width: 210px;
+            background-color: white;
+            padding-left: 40px;
+            /* display: grid;
+            justify-content: center; */
+            /* text-align: center; */
+        }
+        #image{
+            width: 100%;
+            height: 23vh;
+            align-self: center;
+            margin: 5px 0 0 0 ;
+        }
+        #name , #Bio{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Add image link" id="image"  >
+            <p id="name">userName</p>
+            <p id="Bio">Bio</p>
+        </div>
+        <div class="box2">
+            <form action="" id="myform" >
+                <br>
+                <label for="username">Update Username</label>
+                <input type="text" name="" id="username">
+                <br><br>
+                <label for="bios">Update bios</label>
+                <input type="text" name="" id="bios">
+                <br><br>
+                <label for="link">Update Image Link</label>
+                <input type="text" name="" id="link">
+                <br><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -9,6 +9,77 @@
     <script>
         let hi = 5;
         console.log(`hello my fav number is ${hi}`);
+
+        // constructor 
+        var obj = Object(); // can also add like new Object()
+        obj.name = "Piyush";
+        console.log(obj);
+
+        // literals
+        var user = {
+            name : "Piyush",
+            class : "Fee",
+            Rollno : 25,
+            'full name' : "Karan Aujla" 
+        }
+
+        console.log(user.name , user.class);  // printing value using name key 
+        // alt method user if there is multiple word in value of the key
+        console.log(user['Rollno']);
+        console.log(user['full name']);
+
+        // object inside object
+        const sprand = {
+            user1 : {
+                name : "Yash",
+                age : 17 
+            },
+            user2 : {
+                name : {
+                    sir : "mam"
+                }
+            }
+        }
+        console.log(sprand.user1.name);
+        console.log(sprand.user2.name.sir);
+
+        // object inside array
+        let array = [
+            {
+                one : 1,
+                two : 2
+            },
+
+            {
+                one : 1,
+                two : 2
+            },
+
+            {
+                one : 1,
+                two : 2
+            },
+
+            {
+                one : 1,
+                two : 2
+            }
+        ]
+            console.log(array[1].one);
+        let obj1 = {name:"Yash",age:25}
+        let obj2 = {name1:"Yash",age:25}
+        let obj3 = {...obj1,...obj2} // spread operator 
+        let obj4 = Object.assign(obj1,obj2);
+        console.log(obj4);
+        let name = "Hi";
+        console.log(`My name is ${name}`);
+
+        function chapri(a,b){
+            let c = a+b;
+            console.log(c);
+        }
+        chapri(5,3);
+        
     </script>
 </body>
 </html>

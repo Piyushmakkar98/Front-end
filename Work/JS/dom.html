@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://w7.pngwing.com/pngs/282/310/png-transparent-google-logo-google-search-google-s-google-text-logo-google-logo-thumbnail.png" alt="">
+    <p>hi</p>
+    <p>hello</p>
+    <p id="what">what is this selected by id </p>
+    <p >WOw</p>
+    <ul>
+        <li class="whate" >Hello</li>
+        <li class="whate" >Hi</li>
+        <li class="whate" >Poop</li>
+    </ul>
+    <script>
+        var a = document.getElementsByTagName('img');
+        a[0].style.width = "500px"; // index is important
+
+        var p = document.getElementsByTagName('p');
+        p[0].style.color = 'red'; // gets the first p in html code
+        p[1].style.color = 'blue'; // gets the second p in html code 
+
+
+        var c = document.getElementById('what');
+        c.style.backgroundColor = 'pink';
+        c.style.border = "2px solid black";
+        c.style.display = "flex";
+        c.style.justifyContent = "center";
+        c.style.height = "30px";
+        c.style.alignItems = "center";
+
+        var d = document.getElementsByClassName('whate');
+        d[0].style.backgroundColor="red";
+        d[1].style.backgroundColor="red";   
+        
+    </script>
+</body>
+</html>

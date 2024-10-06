@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- inline event -->
+    <!-- <button onclick="console.log('Button Pressed')" >Click Me</button>
+    <button>Dont Click</button> -->
+
+    <span>This is a Paragraph</span>
+
+    <script>
+        // var btn = document.querySelector("button");
+        // var btns = document.querySelectorAll("button");
+
+        // for (what of btns){
+        //     what.onclick = myfunc;
+        // }
+        // function myfunc(){
+        //     console.log("Hello");
+        // }
+
+        // event listener is object 
+        // btn.addEventListener('click',hello);
+        // function hello(){
+        //     console.log("Hello");
+        // }
+
+        var btn = document.querySelector('span');
+        btn.onmouseover = parkhi;
+        function parkhi(){
+            alert("Parkhi gay");
+        }
+    </script>
+</body>
+</html>

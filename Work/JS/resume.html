@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var title = document.createElement('h1');
+            title.textContent = "Resume | Piyush Makkar";
+            title.style.display = "flex";
+            title.style.justifyContent = "center";
+            document.body.appendChild(title);    
+
+            var subhead = document.createElement('h3');
+            subhead.textContent = "Undergraduate Computer Science student at Chitkara University.";
+            subhead.style.display = "flex";
+            subhead.style.justifyContent = "center";
+            document.body.appendChild(subhead);
+
+            var parentdiv = document.createElement('div');
+            parentdiv.style.width = "100%";
+            parentdiv.style.height = "75vh";
+            // parentdiv.style.backgroundColor = "grey";
+            parentdiv.style.display = "flex";
+            parentdiv.style.marginTop = "5vh";
+            parentdiv.style.borderTop = "1px solid black";
+
+            var childDiv1 = document.createElement('div');
+            childDiv1.style.width = "60%";
+            childDiv1.style.height = "75vh";
+            // childDiv1.style.backgroundColor = "skyblue";
+            childDiv1.style.paddingLeft = "1%";
+
+            var childDiv2 = document.createElement('div');
+            childDiv2.style.width = "30%";
+            childDiv2.style.height = "75vh";
+            // childDiv2.style.backgroundColor = "red";
+            childDiv2.style.marginLeft = "5%";
+            
+            parentdiv.appendChild(childDiv1);
+            parentdiv.appendChild(childDiv2);
+
+            document.body.appendChild(parentdiv);
+
+            var firstHead = document.createElement('h2');
+            firstHead.textContent = "PROJECTS";
+            firstHead.style.textDecoration = "underline";
+            childDiv1.appendChild(firstHead);
+
+            var firstsub = document.createElement('h3');
+            firstsub.textContent = "1) Currency Converter";
+            firstsub.style.textDecoration = "bold";
+            childDiv1.appendChild(firstsub);
+
+            var firstpara = document.createElement('h4');
+            firstpara.textContent = "Developed a currency converter website using HTML, CSS, and JavaScript, incorporating an API for fetching the latest exchange rates. Enhanced the project with unique images and a custom-designed user interface to create a visually appealing and user-friendly experience";
+            childDiv1.appendChild(firstpara);
+
+            var firstsub = document.createElement('h3');
+            firstsub.textContent = "2) Book Review Blog Website";
+            firstsub.style.textDecoration = "bold";
+            childDiv1.appendChild(firstsub);
+
+            var firstpara = document.createElement('h4');
+            firstpara.textContent = "Created Books Nation, a simple and elegant book review website using HTML and CSS. This project highlights my front-end development skills, focusing on crafting a visually appealing and user friendly interface for book enthusiasts. The website features a clean, modern design with an organized layout for easy navigation, demonstrating my proficiency in HTML5 and CSS3";
+            childDiv1.appendChild(firstpara);
+
+            var firstsub = document.createElement('h3');
+            firstsub.textContent = "3) Pristine Ecommerce Website (In Development)";
+            firstsub.style.textDecoration = "bold";
+            childDiv1.appendChild(firstsub);
+
+            var firstpara = document.createElement('h4');
+            firstpara.textContent = "Built a pristine e-commerce website for the Accathon event organized by Coding Ninjas";
+            childDiv1.appendChild(firstpara);
+
+            
+
+</script>
+</body>
+</html>

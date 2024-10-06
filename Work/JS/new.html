@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Execute context
+        //function expression - annonymous function
+        let val = function (a,b){
+            return a + b;
+        }
+        console.log(val);
+        console.log(val(5,3));
+
+        // question
+        let cube = function(num){
+            return num*num*num;
+        };
+        console.log(cube(2));
+
+        // higher order function
+            // print name 20 times
+        function printName(func,num){
+            for(let i = 1; i<=num;i++){
+                func();
+            }
+        }
+        let myName = function (){
+            console.log("yash");
+        };
+        printName(myName,20);
+            // print even or odd function
+        
+        let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        let size = array.length;
+        
+        let number = function(func,size){
+            for (let j = 0;j<size;j++){
+                if (func(array[j])){
+                    console.log(array[j] + " is even.");
+                }
+                else{
+                    console.log(array[j] + " is odd.");
+                }
+            }
+        }
+        let even = function(num){
+            if (num%2==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        };
+        number(even,size);
+        
+
+    </script>
+</body>
+</html>

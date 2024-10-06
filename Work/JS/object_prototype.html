@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name : 'Vivek',
+            age : 19,
+            price : 2000,
+        };
+        const person2 = Object.create(person); // Copying object 
+        console.log(person2.name);
+        console.log(person2);
+        console.log(person2.__proto__ == person);
+        person2.age=12;
+        console.log(person2.age);
+
+        console.log(Object.prototype.__proto__); // by default object has null value
+
+        
+    </script>
+</body>
+</html>
